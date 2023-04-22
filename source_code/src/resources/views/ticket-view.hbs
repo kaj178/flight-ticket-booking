@@ -1,0 +1,56 @@
+<style>
+    .ticket {
+        width: 500px;
+        height: 300px;
+        background-color: #f1f1f1;
+        padding: 20px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+        border: 1px solid #ccc;
+    }
+    .header {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .label {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+</style>
+<div class="ticket">
+    <div class="header">Flight Ticket</div>
+    <div class="info">
+        <span class="label">First Name:</span>
+        <span class="value">{{ firstName }}</span>
+    </div>
+    <div class="info">
+        <span class="label">Last Name:</span>
+        <span class="value">{{ lastName }}</span>
+    </div>
+    <div class="info">
+        <span class="label">Phone number</span>
+        <span class="value">{{ phoneNumber }}</span>
+    </div>
+    <div class="info">
+        <span class="label">Email</span>
+        <span class="value">{{ email }}</span>
+    </div>
+    {{!-- <div class="info">
+        <span class="label">Departure Airport:</span>
+        <span class="value">Hanoi (HAN)</span>
+    </div>
+    <div class="info">
+        <span class="label">Arrival Airport:</span>
+        <span class="value">Ho Chi Minh City (SGN)</span>
+    </div> --}}
+</div>

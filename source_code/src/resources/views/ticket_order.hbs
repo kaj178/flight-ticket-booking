@@ -1,0 +1,107 @@
+<div class="container card-0 justify-content-center" style="background-image: url('../img/flight.jpg')">
+  <div class="card-body px-sm-4 px-0">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-10 col">
+        <h3 class="font-weight-bold ml-md-0 mx-auto text-center text-white text-sm-left">
+          ĐẶT VÉ
+        </h3>
+        <p class="mt-md-4 ml-md-0 ml-2 text-center text-white text-sm-left">
+            Quý khách vui lòng điền đầy đủ thông tin bên dưới
+        </p>
+      </div>
+    </div>
+    <form action="/form/submit" method="post" class="row justify-content-center round">
+      <div class="col-lg-10 col-md-12">
+        <div class="card shadow-lg card-1">
+          <div class="card-body inner-card">
+            <div class="row justify-content-center">
+              <div class="col-lg-5 col-md-6 col-sm-12">
+                <div class="form-group"><label for="first-name">Tên</label><input
+                    name="firstName"
+                    type="text"
+                    class="form-control"
+                    id="first-name"
+                    placeholder="Nhập tên..."
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="Mobile-Number">Số điện thoại</label>
+                  <input
+                    name="phoneNumber"
+                    type="text"
+                    class="form-control"
+                    id="Mobile-Number"
+                    placeholder="Nhập số điện thoại..."
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="inputEmail4">From</label>
+                  <select class="form-control">
+                    <option>VietNam</option>
+                    <option>Singapore</option>
+                    <option>Italia</option>
+                    <option>France</option>
+                  </select>
+                </div>
+                <div class="form-group {{!-- d-flex align-items-center flex-fill ms-sm-sm1 my-4 position-relative --}}">
+                    <label for="">Ngày đi</label>
+                    <input type="date" {{!-- required --}} placeholder="Depart Date" class="form-control">
+                    <div class="label" id="depart"></div>
+                </div>
+              </div> {{!-- Left div --}}
+
+              <div class="col-lg-5 col-md-6 col-sm-12">
+                <div class="form-group">
+                  <label for="last-name">Họ</label>
+                  <input
+                    name="lastName"
+                    type="text"
+                    class="form-control"
+                    id="last-name"
+                    placeholder="Nhập họ..."
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Email</label>
+                  <input
+                    name="email"
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Nhập email..."
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="inputEmail4">To</label>
+                  <select class="form-control">
+                    <option>VietNam</option>
+                    <option>Singapore</option>
+                    <option>Italia</option>
+                    <option>France</option>
+                  </select>
+                </div>
+                <div class="form-group {{!-- d-flex align-items-center flex-fill ms-sm-1 my-4 position-relative --}}">
+                    <label for="">Ngày về</label>
+                    <input type="date" {{!-- required --}} placeholder="Return Date" class="form-control">
+                    <div class="label" id="return"></div>
+                </div>
+              </div> {{!-- Right div --}}
+            </div> {{!-- Above div --}}
+
+            <div class="row justify-content-center">
+              <div class="col-md-12 col-lg-10 col-12">
+                <div class="mb-2 mt-4">
+                  <div class="text-right">
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Đặt vé
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div> {{!-- Below div --}}
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

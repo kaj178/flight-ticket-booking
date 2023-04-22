@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="/css/register.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-hgsCvwr/5AApSTX9n+dxD1NvZDxN+HT7nMw6HbbV4v4JGqWV7+s9zHxbRVm6Zv8E2m7yyHuzCUwIZl4V4oq8Ww==" crossorigin="anonymous" />
+<section>
+    <div class="form-box">
+        <div class="form-value">
+            <form method="POST" action="">
+                <h2>Đăng kí</h2>
+                <div class="inputbox">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                    <input value="{{name}}" name="name" class="input" type="text" required>
+                    <label for="">Tên người dùng</label>
+                </div>
+                <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input value="{{email}}" name="email" class="input" type="text" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input name="password" class="input" type="password" required>
+                    <label for="">Mật khẩu</label>
+                </div>
+                <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input name="rePassword" class="input" type="password" required>
+                    <label for="">Xác nhận mật khẩu</label>
+                </div>
+                {{#if error}}
+                <div class="custom-btn alert fade show">
+                    <a class="close" data-dismiss="alert">&times;</a>
+                    {{error}}
+                </div>
+                {{/if}}
+                <button class="custom-btn" type="submit">Đăng ký</button>
+                <div class="register">
+                    <p>Bạn đã có tài khoản? <a href="/account/login">Đăng nhập</a></p>
+                    <p>Quay về trang chủ -> <a href="/">Trang chủ</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    
+</section>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    

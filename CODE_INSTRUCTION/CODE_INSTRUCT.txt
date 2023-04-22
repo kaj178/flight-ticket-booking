@@ -1,0 +1,56 @@
+——— PROJECT STRUCTURE ———
+source_code   	
+	+———src
+	¦   +———public
+	¦   ¦    +————js
+	¦   ¦    ¦
+	¦   ¦    +————img
+	¦   ¦    ¦
+	¦   ¦	 +————css
+	¦   ¦    ¦
+	¦   +———resouces
+	¦   ¦    +———scss
+	¦   ¦    ¦
+	¦   ¦    +———views
+	¦	¦	 ¦  ¦
+	¦   ¦    ¦	+———layouts
+	¦   ¦    ¦	¦	+———main.hbs
+	¦   ¦    ¦	+———partials
+	¦   ¦    ¦	¦	+———header.hbs
+	¦   ¦    ¦	¦	+———footer.hbs
+	¦   ¦    ¦	+———home.hbs
+	¦   ¦    ¦	+———...
+	¦	¦
+	¦	+———app.js
+	¦	¦
+	¦	+———yarn.lock
+	¦	¦    
+	¦	+———.gitignore
+	¦	¦  
+	¦	+———package.json
+
+——— VIẾT CSS ———
+mọi người viết file css trong folder scss nha
+nó tự tạo file css với tên tương ứng app.scss -> app.css
+
+
+——— CHẠY LỆNH ——— 
+yarn watch ( để thay đổi css trong file scss thì nó tự động cập nhật)
+yarn start ( để chạy server localhost 3000 và nó tự động cập nhật khi thay đổi)
+khi cập nhật code thì chỉ cần reload lại trang là dc ko cần chạy lại lệnh
+
+
+——— CÁC MODULES XÀI ———
+nodemon ( để tự động cập nhật code khi load lại trang mà ko cần chạy lại server)
+sass (để tự động cập nhật scss -> css mà ko cần chạy lại lệnh)
+express
+express-handlebars
+
+—————— Cập nhật 1 ——————
+Thống nhất viết view, layout bằng tiếng Việt hết nhé
+
+
+
+
+
+
