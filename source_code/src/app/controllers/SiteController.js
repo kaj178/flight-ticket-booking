@@ -1,12 +1,20 @@
+const db = require('../database/connection')
 class SiteController {
 
     // [GET] /
     index(req, res) {
-        res.render('home', {
-            title: 'Trang chủ',
-            successMsg: req.flash('success'),
-            errorMsg: req.flash('error')
-        });
+        var destinationArray
+        const sql = 'SELECT * FROM destination'
+        db.query(sql, (error, result, fields) => {
+            destinationArray = result
+            res.render('home', {
+                destination: destinationArray,
+                title: 'Trang chủ',
+                successMsg: req.flash('success'),
+                errorMsg: req.flash('error')
+            });
+        })
+        
     }
 
     login(req, res) {
