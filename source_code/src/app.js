@@ -56,20 +56,6 @@ app.use(passport.session())
 // Route init
 route(app)
 
-// Bắt lỗi 404
-// app.use((req, res) => {
-//   res.type('text/plain')
-//   res.status(404)
-//   res.redirect('/404')
-// })
-
-// // Bắt lỗi 500
-// app.use((err, req, res, next) => {
-//   res.type('text/plain')
-//   res.status(500)
-//   res.redirect('/500')
-// })
-
 
 // Lắng nghe cổng server
 app.listen(port, () => console.log(
